@@ -1,9 +1,9 @@
-import 'package:attandance_app/screens/history_page.dart';
-import 'package:attandance_app/screens/profile_page.dart';
-import 'package:attandance_app/screens/request_page.dart';
+import 'package:attandance_app/features/history/screens/history_page.dart';
+import 'package:attandance_app/features/profile/screens/profile_page.dart';
+import 'package:attandance_app/features/request/screens/request_page.dart';
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import '../../home/screens/home_page.dart';
 
 class MainNavigation extends StatefulWidget {
   const MainNavigation({super.key, this.camera});

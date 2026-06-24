@@ -1,4 +1,4 @@
-import 'package:attandance_app/screens/attendance_camera/check_in_camera_screen.dart';
+import 'package:attandance_app/features/camera/screens/check_in_camera_screen.dart';
 import 'package:camera/camera.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -95,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                               SizedBox(height: 4),
                               Text(
-                                'IT Division',
+                                'Mobile Developer',
                                 style: GoogleFonts.poppins(
                                     fontSize: 14,
                                     color: Colors.white70
@@ -114,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                   'Today\'s Status',
                   style: GoogleFonts.poppins(
                       fontSize: 18,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w700,
                       color: Colors.black
                   ),
                 ),
@@ -183,7 +183,7 @@ class _HomePageState extends State<HomePage> {
                             'CLOCK IN NOW',
                             style: GoogleFonts.poppins(
                               fontSize: 16,
-                              fontWeight: FontWeight.w700,
+                              fontWeight: FontWeight.w600,
                               letterSpacing: 1
                             ),
                           ),
@@ -198,7 +198,7 @@ class _HomePageState extends State<HomePage> {
                   'Attendance Summary',
                   style: GoogleFonts.poppins(
                       fontSize: 18,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w700,
                       color: Colors.black
                   ),
                 ),

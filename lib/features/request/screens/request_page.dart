@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'add_request_page.dart';
+
 class RequestPage extends StatefulWidget {
   const RequestPage({super.key});
 
@@ -137,7 +139,12 @@ class _RequestPageState extends State<RequestPage> {
         child: InkWell(
           borderRadius: BorderRadius.circular(20),
           onTap: () {
-            // Aksi ketika tombol diklik (Navigasi ke Form Pengajuan)
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => AddRequestPage(requestType: title),
+              ),
+            );
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

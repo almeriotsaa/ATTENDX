@@ -1,5 +1,11 @@
-import 'package:attandance_app/screens/auth/login_page.dart';
+import 'package:attandance_app/features/auth/screens/login_page.dart';
+import 'package:attandance_app/features/profile/screens/support_faq_page.dart';
 import 'package:flutter/material.dart';
+
+import 'change_password_page.dart';
+import 'edit_profile_page.dart';
+import 'employee_details_page.dart';
+import 'notification_settings_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key, this.camera});
@@ -29,7 +35,12 @@ class _ProfilePageState extends State<ProfilePage> {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const EditProfilePage()),
+              );
+            },
             icon: const Icon(Icons.edit_outlined, color: Colors.black87),
           )
         ],
@@ -71,7 +82,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   const SizedBox(height: 16),
                   const Text(
-                    'Almerio',
+                    'Almerio Tsany',
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
@@ -135,13 +146,33 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 child: Column(
                   children: [
-                    _buildMenuItem(Icons.badge_outlined, 'Employee Details', () {}),
+                    _buildMenuItem(Icons.badge_outlined, 'Employee Details', () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const EmployeeDetailsPage()),
+                      );
+                    }),
                     _buildDivider(),
-                    _buildMenuItem(Icons.lock_open_outlined, 'Change Password', () {}),
+                    _buildMenuItem(Icons.lock_open_outlined, 'Change Password', () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ChangePasswordPage()),
+                      );
+                    }),
                     _buildDivider(),
-                    _buildMenuItem(Icons.notifications_none_rounded, 'Notification Settings', () {}),
+                    _buildMenuItem(Icons.notifications_none_rounded, 'Notification Settings', () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const NotificationSettingsPage()),
+                      );
+                    }),
                     _buildDivider(),
-                    _buildMenuItem(Icons.help_outline_rounded, 'Support & FAQ', () {}),
+                    _buildMenuItem(Icons.help_outline_rounded, 'Support & FAQ', () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const SupportFaqPage()),
+                      );
+                    }),
                   ],
                 ),
               ),

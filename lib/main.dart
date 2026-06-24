@@ -1,6 +1,6 @@
-import 'package:attandance_app/screens/auth/login_page.dart';
-import 'package:attandance_app/screens/home_page.dart';
-import 'package:attandance_app/screens/main_navigation.dart';
+import 'package:attandance_app/features/auth/screens/login_page.dart';
+import 'package:attandance_app/features/home/screens/home_page.dart';
+import 'package:attandance_app/features/navigation/screens/main_navigation.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
