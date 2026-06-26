@@ -27,6 +27,8 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>ATTENDX needs access to location to verify your work area for attendance.</string>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
